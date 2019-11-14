@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eventname: MyString
+  location: MyString
+  date: 2019-11-14
+  time: 2019-11-14 11:17:06
+  details: MyText
+  archived: false
+
+two:
+  eventname: MyString
+  location: MyString
+  date: 2019-11-14
+  time: 2019-11-14 11:17:06
+  details: MyText
+  archived: false

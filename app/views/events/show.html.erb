@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class= "container">
+
+
+<p>
+  <strong><h2><%= @event.eventname %></h2></strong>
+  
+</p>
+
+  <ul class="list-group">
+  <li class="list-group-item"><strong>Location:</strong>  <%= @event.location %> </li>
+  <li class="list-group-item"><strong>Date:</strong> <%= @event.date %></li>
+  <li class="list-group-item"><strong>Time:</strong> <%= @event.time.to_formatted_s(:time) %></li>
+  <li class="list-group-item"><strong>Archived:</strong><%= @event.archived %></li>
+  <li class="list-group-item"><strong>Details: </strong> <%= @event.details %> </li>
+</ul>
+
+
+<br>
+
+<%= link_to 'Edit', edit_event_path(@event), :class => "btn btn-primary" %> 
+<%= link_to 'Back', events_path, :class => "btn btn-primary" %>
+
+
+
+</div>
